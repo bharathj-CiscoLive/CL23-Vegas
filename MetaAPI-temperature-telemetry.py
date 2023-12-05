@@ -31,7 +31,7 @@ def parse_data(data):
             temperature = data["iotTelemetry"]["temperature"]["temperatureInCelsius"]
             update_data(device_mac, temperature)
         else:
-            print(f"No temperature data for device: {device_mac}")
+            print(f"Device: {device_mac}")
 
 
 def update_data(device_mac, temperature):
